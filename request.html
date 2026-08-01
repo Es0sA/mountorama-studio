@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start a Request | Mountorama Studio</title>
+<meta name="description" content="Submit your script, style, page count, and references to get a quote from Mountorama Studio.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="wordmark"><span class="dot"></span>Mountorama</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">Menu</button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="faq.html">FAQ</a>
+      <a href="request.html" class="btn btn--red" aria-current="page">Start a Request</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="page-label page-label--on-dark">PG. 02 · BRIEF INTAKE</span>
+    <h1>Tell us<br>about the book.</h1>
+    <p class="lede">Fill this out once per request. You can bundle up to 5 comic books together. The studio sends one quote covering all of them.</p>
+  </div>
+</section>
+
+<section class="block" style="border-bottom:none; padding-top:3.5rem;">
+  <div class="wrap">
+
+    <form class="form-shell" data-request-form>
+      <div class="form-main">
+
+        <fieldset>
+          <legend>Comic books in this request</legend>
+          <div data-book-list>
+            <div class="book-block">
+              <button type="button" class="remove-book" style="display:none;">Remove</button>
+              <p class="book-title">Comic book 1 of 1</p>
+
+              <div class="field">
+                <label for="title-0">Working title</label>
+                <input type="text" id="title-0" name="title[0]" placeholder="e.g. Ashfall Vol. 1" required>
+              </div>
+
+              <div class="field">
+                <label for="script-0">Script</label>
+                <input type="file" id="script-0" name="script[0]" accept=".pdf,.doc,.docx,.txt,.fdx">
+                <span class="hint">Upload a file, or paste it below instead. If you're holding a promo slot, you can send this later.</span>
+              </div>
+
+              <div class="field">
+                <label for="script-text-0">Or paste script text</label>
+                <textarea id="script-text-0" name="scriptText[0]" placeholder="Paste your script here if you'd rather not upload a file..."></textarea>
+              </div>
+
+              <div class="field">
+                <label>Preferred style</label>
+                <div class="style-options">
+                  <div class="style-option">
+                    <input type="radio" id="style-american-0" name="style[0]" value="american" required>
+                    <label for="style-american-0">American<span class="artist">Bold line, dynamic panels</span></label>
+                  </div>
+                  <div class="style-option">
+                    <input type="radio" id="style-chinese-0" name="style[0]" value="chinese">
+                    <label for="style-chinese-0">Chinese<span class="artist">Manhua-influenced</span></label>
+                  </div>
+                  <div class="style-option">
+                    <input type="radio" id="style-korean-0" name="style[0]" value="korean">
+                    <label for="style-korean-0">Korean<span class="artist">Manhwa-influenced</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="pages-0">Page count</label>
+                  <input type="number" id="pages-0" name="pages[0]" min="1" placeholder="e.g. 20" required>
+                </div>
+                <div class="field">
+                  <label for="panels-0">Panel count</label>
+                  <input type="number" id="panels-0" name="panels[0]" min="1" placeholder="e.g. 90">
+                  <span class="hint">Total across the book, roughly is fine.</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="refs-0">Reference images</label>
+                <input type="file" id="refs-0" name="refs[0]" accept="image/*" multiple>
+                <span class="hint">Character sheets, mood boards, style references. Anything that helps the artist.</span>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="add-book-btn" data-add-book>+ Add another comic book</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Timeline & budget</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="deadline">Deadline (if any)</label>
+              <input type="date" id="deadline" name="deadline">
+            </div>
+            <div class="field">
+              <label for="budget">Budget expectation</label>
+              <select id="budget" name="budget">
+                <option value="">Select a range</option>
+                <option value="unsure">Not sure yet, send me a quote</option>
+                <option value="under-1000">Under $1,000</option>
+                <option value="1000-3000">$1,000 &ndash; $3,000</option>
+                <option value="3000-plus">$3,000+</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <span class="hint">Your account and login are created once you pay the deposit.</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn--red">Send Request</button>
+      </div>
+
+      <aside class="form-side">
+        <div class="side-note">
+          <h4>What happens next</h4>
+          <p>The studio reviews your brief and sends a quote at the current rate ($100/pg standard, or the active promo rate). No payment is taken here.</p>
+        </div>
+        <div class="side-note">
+          <h4>Holding a promo slot?</h4>
+          <p>You can pay the 50% deposit at the promo rate without a finished script. Just note that in the title field and send the script once it's ready. Your account is created at the deposit step either way.</p>
+        </div>
+        <div class="side-note">
+          <h4>Bundling books</h4>
+          <p>Up to 5 comic books per request. Each gets its own 50% deposit once quoted.</p>
+        </div>
+        <div class="disclaimer">
+          Prototype form. Nothing is submitted anywhere yet. This shows the intended flow only.
+        </div>
+      </aside>
+    </form>
+
+    <div class="confirm-panel" data-confirm-panel>
+      <span class="stamp stamp--red">Request received</span>
+      <h2>We've got your brief.</h2>
+      <p>The studio will review it and reply by email with a quote. That's PG.03 in the process: quote, then deposit, then production starts.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-col">
+      <a href="index.html" class="wordmark"><span class="dot"></span>Mountorama</a>
+      <p style="margin-top:1rem; max-width:32ch;">Hand-illustrated comic pages, in the style you choose, drawn by the artist who specializes in it.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="request.html">Start a Request</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Studio</h4>
+      <a href="#">Facebook</a>
+      <a href="#">hello@mountorama.studio</a>
+      <p>Digital delivery only, printing not included.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 Mountorama Studio LTD. All pages hand-drawn by the Mountorama team.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
