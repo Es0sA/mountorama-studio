@@ -485,7 +485,7 @@ section.block:last-of-type { border-bottom: none; }
 /* ---------- Page hero (secondary pages) ---------- */
 
 .page-hero {
-  background: var(--charcoal);
+  background: var(--charcoal) url('assets/hero-bg.jpg') center 35% / cover no-repeat;
   color: var(--paper);
   border-bottom: 2px solid var(--ink);
   position: relative;
@@ -495,9 +495,7 @@ section.block:last-of-type { border-bottom: none; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(255,255,255,0.12) 1px, transparent 1.4px);
-  background-size: 11px 11px;
-  mask-image: linear-gradient(to bottom, black, transparent);
+  background: linear-gradient(180deg, rgba(20,21,26,0.55) 0%, rgba(20,21,26,0.82) 70%, rgba(20,21,26,0.95) 100%);
 }
 .page-hero .wrap { position: relative; padding: 4rem 1.5rem 3rem; }
 .page-hero h1 { color: #fff; margin-bottom: 0.75rem; }
