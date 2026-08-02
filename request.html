@@ -84,9 +84,9 @@
                   <input type="number" id="pages-0" name="pages[0]" min="1" placeholder="e.g. 20" required>
                 </div>
                 <div class="field">
-                  <label for="panels-0">Panel count</label>
-                  <input type="number" id="panels-0" name="panels[0]" min="1" placeholder="e.g. 90">
-                  <span class="hint">Total across the book, roughly is fine.</span>
+                  <label for="panels-0">Max panels per page (optional)</label>
+                  <input type="number" id="panels-0" name="panels[0]" min="1" placeholder="e.g. 6">
+                  <span class="hint">Leave blank if you don't have a preference.</span>
                 </div>
               </div>
 
@@ -99,26 +99,6 @@
           </div>
 
           <button type="button" class="add-book-btn" data-add-book>+ Add another comic book</button>
-        </fieldset>
-
-        <fieldset>
-          <legend>Timeline & budget</legend>
-          <div class="field-row">
-            <div class="field">
-              <label for="deadline">Deadline (if any)</label>
-              <input type="date" id="deadline" name="deadline">
-            </div>
-            <div class="field">
-              <label for="budget">Budget expectation</label>
-              <select id="budget" name="budget">
-                <option value="">Select a range</option>
-                <option value="unsure">Not sure yet, send me a quote</option>
-                <option value="under-1000">Under $1,000</option>
-                <option value="1000-3000">$1,000 &ndash; $3,000</option>
-                <option value="3000-plus">$3,000+</option>
-              </select>
-            </div>
-          </div>
         </fieldset>
 
         <fieldset>
